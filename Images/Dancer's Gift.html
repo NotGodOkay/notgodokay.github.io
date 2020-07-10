@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dancer's Gift</title>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Likes " + localStorage.clickcount;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support the like function...";
+  }
+}
+</script>
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="color:Tomato;background-color:black;font-family:OblivionFont">
+<p><button onclick="clickCounter()" type="button">Like</button></p>
+<div id="result"></div>
+<img src="Dancer's Gift.png" class="center"><br>
+<p style="text-align:center">DOTBV (Dancer of the Boreal Valley)<br>
+Finally some spare time for this. The Dancer did another job well done and are now getting her well deserved reward. A mass of tentacles up her ass.<br>
+I admit, I can't draw the Dancer's design completely accurately cause I only looked up the porn sites for reference, so I might just make my own design if I have to.</p>
+<br>
+<a href="../main.html">
+<p style="text-align:center">Go back to the main page</p>
+</a>
+</body>
+</html>

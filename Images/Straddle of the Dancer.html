@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Straddle of the Dancer</title>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Likes " + localStorage.clickcount;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support the like function...";
+  }
+}
+</script>
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="color:Tomato;background-color:black;font-family:OblivionFont">
+<p><button onclick="clickCounter()" type="button">Like</button></p>
+<div id="result"></div>
+<img src="Straddle of the Dancer.png" class="center"><br>
+<p style="text-align:center">"My lust is big, but my ass is bigger." DOTBV<br>
+Thought about doing some fucking that isn't a pov or with a centered camera angle for once. Here the Dancer is anal raping a Unfortunate(Fortunate) adventurer for his sperm. This might be getting animated if I can.</p>
+<br>
+<a href="../main.html">
+<p style="text-align:center">Go back to the main page</p>
+</a>
+</body>
+</html>

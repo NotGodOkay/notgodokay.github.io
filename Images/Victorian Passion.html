@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Victorian Passion</title>
+</head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Likes " + localStorage.clickcount;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support the like function...";
+  }
+}
+</script>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="color:Tomato;background-color:black;font-family:OblivionFont">
+<p><button onclick="clickCounter()" type="button">Like</button></p>
+<div id="result"></div>
+<img src="Victorian Passion.png" class="center"><br>
+<p style="text-align:center">Long time since Victoria was put up. This is an old image where I experimented with my artstyle a-bit. Decided to submit it just now.<br>
+Character belongs to HogisGuy.</p>
+<br>
+<a href="../main.html">
+<p style="text-align:center">Go back to the main page</p>
+</a>
+</body>
+</html>

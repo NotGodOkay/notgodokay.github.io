@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ricochet1</title>
+</head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Likes " + localStorage.clickcount;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support the like function...";
+  }
+}
+</script>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="color:Tomato;background-color:black;font-family:OblivionFont">
+<p><button onclick="clickCounter()" type="button">Like</button></p>
+<div id="result"></div>
+<img src="Ricochet1.png" class="center"><br>
+<p style="text-align:center">Ricochet was the first TechGirl I made. I don't remember why Aeyla was made but I don't regret it.</p>
+<br>
+<a href="../main.html">
+<p style="text-align:center">Go back to the main page</p>
+</a>
+</body>
+</html>
