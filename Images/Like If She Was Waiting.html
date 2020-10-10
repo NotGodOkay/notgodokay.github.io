@@ -3,20 +3,6 @@
 <head>
 <title>Like If She Was Waiting</title>
 </head>
-<script>
-function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("result").innerHTML = "Likes " + localStorage.clickcount;
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support the like function...";
-  }
-}
-</script>
 <style>
 img {
   display: block;
@@ -25,8 +11,6 @@ img {
 }
 </style>
 <body style="color:Tomato;background-color:black;font-family:OblivionFont">
-<p><button onclick="clickCounter()" type="button">Like</button></p>
-<div id="result"></div>
 <img src="Like If She Was Waiting.png" class="center"><br>
 <p style="text-align:center">Mistress Elvira waiting for someone.<br>
 Character belongs to nagasnake.</p>
