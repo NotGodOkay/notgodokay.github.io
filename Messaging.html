@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thoughts and News</title>
+<link rel="icon" href="favicon.png">
+</head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="color:Tomato;background-color:black;font-family:OblivionFont">
+<br>
+<br>
+<h1 style="text-align:center">Messaging</h1>
+<br>
+<br><p style="text-align:center">
+<form action="messages.php">
+  <label for="thename">Name:</label>
+  <input type="text" id="thename" name="thename"><br><br>
+  <label for="themessage">Message:</label>
+  <input type="text" id="themessage" name="themessage"><br><br>
+  <input type="submit">
+</form>
+<?php
+HERE;
+$output = <<< HERE
+nm: $thename
+mesg: $themessage
+HERE;
+$fp = fopen("contacts.txt", "a");
+fwrite($fp, $output);
+fclose($fp);
+?>
+<br>
+<br>
+<a href="main.html">
+<p style="text-align:center">Go back to the main page</p>
+</a>
+</body>
+</html>
